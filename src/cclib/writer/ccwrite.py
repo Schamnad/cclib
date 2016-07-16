@@ -12,6 +12,8 @@
 standardized chemical representations, such as chemical JSON, CML, and
 Cartesian coordinates."""
 
+from __future__ import absolute_import
+
 import os.path
 import sys
 # Python 2->3 changes the default file object hierarchy.
@@ -21,7 +23,7 @@ else:
     import io
     fileclass = io.IOBase
 
-from .. import parser
+import cclib.parser
 
 from . import cjsonwriter
 from . import cmlwriter
