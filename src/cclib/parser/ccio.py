@@ -30,8 +30,7 @@ from .nwchemparser import NWChem
 from .orcaparser import ORCA
 from .psiparser import Psi
 from .qchemparser import QChem
-
-from cclib.writer.cjsonreader import CJSON
+from ..writer.cjsonreader import CJSON
 
 try:
     from ..bridge import cclib2openbabel
