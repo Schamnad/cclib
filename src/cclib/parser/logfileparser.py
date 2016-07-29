@@ -83,9 +83,11 @@ class FileWrapper(object):
         # specific with except block here.
         try:
 
-            self.src.seek(0, 2)
-            self.size = self.src.tell()
-            self.src.seek(pos, 0)
+            # self.src.seek(0, 2)
+            # self.size = self.src.tell()
+            # self.src.seek(pos, 0)
+            input = sys.stdin.read()
+            self.size = len(input)
             self.pos = pos
 
         except:
